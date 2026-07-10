@@ -178,6 +178,9 @@ where
         }
     }
 
+    /// Returns the last entry in this iterater's range.
+    ///
+    /// If a last entry exists this will always return it, even if it has already been given with `next`.
     fn last(mut self) -> Option<Self::Item> {
         let result = self.cursor.move_on_last(IM::MOVE_OPERATION);
 
@@ -397,6 +400,9 @@ where
         }
     }
 
+    /// Returns the last entry in this iterater's range.
+    ///
+    /// If a last entry exists this will always return it, even if it has already been given with `next`.
     fn last(mut self) -> Option<Self::Item> {
         let result = self.cursor.move_on_last(IM::MOVE_OPERATION);
 
@@ -504,6 +510,9 @@ where
         }
     }
 
+    /// Returns the last entry in this iterater's range.
+    ///
+    /// If a last entry exists this will always return it, even if it has already been given with `next`.
     fn last(mut self) -> Option<Self::Item> {
         let result = self.cursor.move_on_first(IM::MOVE_OPERATION);
 
@@ -725,6 +734,9 @@ where
         }
     }
 
+    /// Returns the last entry in this iterater's range.
+    ///
+    /// If a last entry exists this will always return it, even if it has already been given with `next`.
     fn last(mut self) -> Option<Self::Item> {
         let result = self.cursor.move_on_first(IM::MOVE_OPERATION);
 
